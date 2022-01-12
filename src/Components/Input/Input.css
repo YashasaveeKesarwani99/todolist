@@ -1,0 +1,8 @@
+.Input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
