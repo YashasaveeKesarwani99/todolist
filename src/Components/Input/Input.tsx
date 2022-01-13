@@ -34,6 +34,7 @@ const Input:React.FC<props> = ({setTask,tasks,setTasks,task}) =>{
             onChange={changeHandler}
             />
             <Button
+            data-testid="button"
             onClick={(e:React.MouseEvent<HTMLElement>)=>clickHandler(e)}
             >Add</Button>
         </div>

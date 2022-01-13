@@ -7,7 +7,7 @@ describe('Testing Input Component',()=>{
 
     var setTask:React.Dispatch<React.SetStateAction<string>>
     var setTasks:React.Dispatch<React.SetStateAction<string[]>>
-    var task:string
+    var task:string = ""
     var tasks:string[]=[]
 
     it('Input area is present',()=>{
@@ -16,13 +16,5 @@ describe('Testing Input Component',()=>{
 
         expect(ele).toBeInTheDocument()
     })
-
-    // it('gets input from input component',()=>{
-    //     const comp = render(<Input  setTask={setTask} setTasks={setTasks} tasks={tasks} task={task}/>)
-    //     const ele = comp.getByPlaceholderText(/Enter Task/i)
-
-    //     fireEvent.change(ele,{target:{value:'Go To Gym'}})
-    //     expect(ele.target.value).toBe(/Go To Gym/i)
-    // })
 
 })
